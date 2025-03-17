@@ -1,75 +1,90 @@
-# Projet Node.js - Environnement de Développement
+# Node.js Project - Development Environment
 
 ## Description
-Ce projet utilise un environnement de développement structuré et professionnel pour une application Node.js. L'objectif est de garantir un développement efficace avec des outils modernes tels que Webpack, Babel, ESLint, SASS, et plus encore.
+This project provides a structured and professional development environment for a Node.js application. The setup includes modern tools such as Webpack, Babel, ESLint, SASS, and more to streamline development.
 
 ---
 
-## Fonctionnalités
-- **Tests unitaires** avec Jest, incluant un rapport de couverture.
-- **Documentation automatique** générée avec JSDoc.
-- **Linter ESLint** avec la configuration Airbnb.
-- **Gestion des styles** avec SASS et Webpack.
-- **Hot Reload** pour un rechargement en direct pendant le développement.
-- **Transpilation** du code JavaScript moderne (ES6+) avec Babel.
-- **Conventions de commits** respectées via Commitizen et Commitlint.
+## Features
+- **Unit Testing** with Jest, including a coverage report.
+- **Automated Documentation** generated with JSDoc.
+- **ESLint Linter** using Airbnb configuration.
+- **Style Management** with SASS and Webpack.
+- **Hot Reload** for live updates during development.
+- **JavaScript Transpilation** (ES6+ to older browser-compatible versions) with Babel.
+- **Commit Conventions** enforced using Commitizen and Commitlint.
 
 ---
 
-## Structure du Projet
-Voici l'organisation des dossiers et fichiers :
+## Project Structure
+The project is organized as follows:
 
+/project_name ├── /tests/ # Folder for test files ├── /src/ # Source code │ ├── index.js # Main entry point │ ├── styles.scss # SASS styles ├── /dist/ # Generated files from Webpack ├── jsdoc.json # JSDoc configuration ├── package.json # Node.js project configuration ├── webpack.config.js # Webpack configuration └── README.md # Project documentation
 
-/nom_du_projet ├── /tests/ # Dossier pour les fichiers de tests ├── /src/ # Code source │ ├── index.js # Point d'entrée principal │ ├── styles.scss # Fichier de styles en SASS ├── /dist/ # Fichiers générés par Webpack ├── jsdoc.json # Configuration JSDoc ├── package.json # Configuration Node.js ├── webpack.config.js # Configuration Webpack └── README.md # Documentation du projet
 
 ---
 
-## Pré-requis
-Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
-- **Node.js** (version 16 ou supérieure)
-- **npm** (ou Yarn)
+## Prerequisites
+Make sure you have the following installed:
+- **Node.js** (version 22 or higher)
+- **npm** 
 
 ---
 
 ## Installation
-1. Clonez le dépôt :
+1. Clone the repository:
    ```bash
-   git clone <URL_DU_REPO>
-   cd nom_du_projet
+   git clone https://github.com/DivineBi/app-installation-process.git
+   cd ENV-APP
 
-Commandes Disponibles
-Les commandes suivantes sont définies dans le fichier package.json :
+2. Install dependencies:
 
-npm run prod : Compile le projet pour la production (tests inclus).
+    ```bash
+    npm install
 
-npm run dev : Lance l'environnement de développement avec hot reload.
+### Available Commands
+The following commands are defined in package.json:
 
-npm run lint : Vérifie le code avec ESLint.
+npm run prod: Builds the project for production (includes tests).
 
-npm run test : Exécute les tests unitaires avec Jest.
+npm run dev: Starts the development environment with hot reload.
 
-npm run doc : Génère la documentation JSDoc.
+npm run lint: Runs the linter (ESLint).
 
-Tests Unitaires
-Les tests sont organisés dans le dossier __tests__/.
+npm run test: Executes unit tests with Jest.
 
-Pour exécuter les tests :
+npm run doc: Generates JSDoc documentation.
 
-bash
-npm run test
-Documentation
-La documentation du code est générée automatiquement avec JSDoc. Pour la générer :
+### Unit Testing
+Tests are organized in the __tests__/ folder.
 
-bash
-npm run doc
-Elle sera disponible dans un dossier nommé out/.
+To run the tests:
 
-Contribution
-Respectez les conventions de commits (utilisez npm run commit pour un message de commit structuré).
+```bash
+    npm run test
+```
+    
 
-Vérifiez votre code avec ESLint avant de créer une pull request :
+### Documentation
+Documentation is automatically generated using JSDoc. To generate the documentation:
 
-bash
-npm run lint
-Licence
-Ce projet est sous licence MIT.
+```bash
+    npm run doc
+```
+
+The documentation will be available in the out/ folder.
+
+### Contribution
+Follow the commit conventions (use npm run commit for a structured commit message).
+
+Lint your code before creating a pull request:
+
+```bash
+    npm run lint
+```
+
+### License
+This project is licensed under the MIT License.
+
+
+
