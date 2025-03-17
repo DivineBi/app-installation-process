@@ -1,0 +1,41 @@
+{
+  "name": "env-app",
+  "version": "1.0.0",
+  "description": "Mise en place d’un environnement de développement avec Node.js",
+  "license": "MIT",
+  "author": "Divine BINGILA",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.22.0",
+    "babel-loader": "^10.0.0",
+    "commitizen": "^4.3.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4",
+    "sass": "^1.85.1",
+    "style-loader": "^4.0.0",
+    "typescript-eslint": "^8.26.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
