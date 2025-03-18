@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './styles.scss'; // Import du fichier SASS
 
-require('dotenv').config(); //pour charger les variables d'environnement
+console.log(process.env.DB_HOST);
 
 const App = () => {
   return (
     <div>
-      <h1>Bienvenue l'application Node.js avec React</h1>
-      <p>L'environnement de développement est configuré.</p>
+      <h1>Bienvenue l&apos;application Node.js avec React</h1>
+      <p>L&apos;environnement de développement est configuré.</p>
     </div>
   );
 };
 
 // Montre le composant principal dans la div "root" de index.html
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<App />);
